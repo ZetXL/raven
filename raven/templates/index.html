@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raven Portfolio</title>
+    <link rel="icon" href="{% static 'images/001-raven.png' %}" type="image/png">
+
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+
+    <!--Bootstrap And Js, jQuery-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--Google icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Open Iconic-->
+    <link rel="stylesheet" href="open-iconic/font/css/open-iconic-bootstrap.css">
+
+    <style>
+
+    </style>
+</head>
+<body class="body">
+
+    <section>
+
+      <nav class="navbar fixed-top navbar-expand-lg topnav navbar-light">
+          <img src="{% static 'images/001-raven.png' %}" alt="" class="raven_image">
+          <a class="navbar-brand mr-auto nav_head" href="#">Raven</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-navicon" style="color:#0BBBA0; font-size:28px;"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link nav_link" href="#about" style="color: #0BBBA0;">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link nav_link" href="#projects" style="color: #0BBBA0;">Project</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link nav_link" href="#" style="color: #0BBBA0;">SayHello</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </section>
+
+
+    <section class="personal" id="personal">
+        <div class="row row-reverse">
+            <div class="col-sm-6 div_one">
+                <button class="intro_button">
+                    Hello, I'm
+                </button>
+                <h2 class="name">Mr.Paris</h2>
+                <h4 class="job_title">Web Developer</h4>
+                <div class="row">
+                    <span class="fa fa-envelope icons" style="color:burlywood;font-size:25px"></span><p class="person_info">parisfrommyanmar@gmail.com</p>
+                </div>
+                <div class="row">
+                    <i class="material-icons icon" style="color:burlywood;font-size:30px">local_phone</i>
+                    <p class="person_info">+959 123 456 789</p>
+                </div>
+                <div class="row">
+                    <i class="material-icons icon" style="color:burlywood;font-size:30px">location_on</i>
+                    <p class="person_info">Hledan, U Tun Lin Chan St</p>
+                </div>
+                <div class="justify-content-center pt-4">
+                    <a href="https://www.facebook.com/WaiLwinPhyoLoveHsuShweYiWin" class="px-3"><span class="fab fa-facebook-f icon_align" style="color:#0BBBA0; font-size:25px"></span></a>
+                    <a href="https://www.google.com/" class="px-3"><span class="fab fa-twitter icon_align" style="color:#0BBBA0; font-size:25px"></span></a>
+                    <a href="https://www.google.com/" class="px-3"><span class="fab fa-github icon_align" style="color:#0BBBA0; font-size:25px"></span></a>
+                    <a href="https://www.google.com/" class="px-3"><span class="fab fa-linkedin icon_align" style="color:#0BBBA0; font-size:25px"></span></a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="{% static 'images/wailwinphyo.png' %}" alt="" class="img-fluid my_image">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'images/stickertest7.png' %}" alt="" class="dev_image">
+            </div>
+            <div class="col-md-6 col-12" id="about_padding">
+                <h1 class="about_text">About Me</h1>
+                <p class="about_para">Hello, I’m a Myanmar, web-developer based on Yangon.
+                    I have rich experience in web site design & building
+                    and customization. Also I am good at</p>
+                <div>
+                    <ul style="padding-left:0;" class="justify-content-center">
+                        <li><span>Python</span></li>
+                        <li><span>Django</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>React</span></li>
+                        <li><span>Postgres</span></li>
+                        <li><span>JS Charts</span></li>
+                        <li><span>AWS (RDS/S3)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="row doing" id="doing">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="section_title text-center" id="section_title">What I Do</h1>
+            </div>
+            <div class="col-sm-12 col-md col-lg section_doing card">
+                <i class="fas fa-palette doing_icon" style="font-size:30px; color:#9774fa;"></i>
+                <h3 class="card-title doing_title">UI Design</h3>
+                <p class="card-text doing_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni maxime, corrupti ratione amet blanditiis nemo nam perspiciatis, cumque assumenda quidem autem ab velit quo sunt a. Dolor, neque? Consequatur.</p>
+
+            </div>
+            <div class="col-sm-12 col-md col-lg section_doing card">
+                <i class="fas fa-code doing_icon" style="font-size:30px; color:#ed7256;"></i>
+                <h3 class="card-title doing_title">Web Development</h3>
+                <p class="card-text doing_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni maxime, corrupti ratione amet blanditiis nemo nam perspiciatis, cumque assumenda quidem autem ab velit quo sunt a. Dolor, neque? Consequatur.</p>
+
+            </div>
+            <div class="col-sm-12 col-md col-lg section_doing card">
+                <i class="fas fa-laptop-code doing_icon" style="font-size:30px; color:#2796e2;"></i>
+                <h3 class="card-title doing_title">App Development</h3>
+                <p class="card-text doing_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni maxime, corrupti ratione amet blanditiis nemo nam perspiciatis, cumque assumenda quidem autem ab velit quo sunt a. Dolor, neque? Consequatur.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="experiences" id="experiences">
+        <div class="row">
+            <div class="col-sm-12 col-md col-lg">
+                <h1 class="skill_title">Technical Skills</h1>
+                <p class="skill_name">Python <span class="float-right skill_percen">80%</span></p>
+                <div class="progress" style="height:9px;">
+                    <div class="progress-bar" style="width:80%;background-color:#0BBBA0;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill_name">Django <span class="float-right skill_percen">65%</span></p>
+                <div class="progress" style="height:9px;">
+                    <div class="progress-bar" style="width:65%;background-color:#0BBBA0;" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill_name">JavaScript <span class="float-right skill_percen">50%</span></p>
+                <div class="progress" style="height:9px;">
+                    <div class="progress-bar" style="width:50%;background-color:#0BBBA0;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill_name">Postgres <span class="float-right skill_percen">45%</span></p>
+                <div class="progress" style="height:9px;">
+                    <div class="progress-bar" style="width:45%;background-color:#0BBBA0;" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill_name">AWS (RDS/S3) <span class="float-right skill_percen">40%</span></p>
+                <div class="progress" style="height:9px;">
+                    <div class="progress-bar" style="width:40%;background-color:#0BBBA0;" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md col-lg ex">
+                <h2 class="work_head">Work Experience</h2>
+                <div class="row work_ex">
+                    <div>
+                        <p class="work_name" style="color:#0BBBA0;">UI/UX Designer <span class="place"> Oxford University</span></p>
+                        <p class="year" style="color:#FB6565;">2001-2020</p>
+                        <h4 class="respon">Responsibility ==> </h4>
+                        <ul class="ul">
+                            <li class="list"><i class="fa fa-circle list_circle"></i>meet designers, developers and project staff for progress updates</li>
+                            <li class="list"><i class="fa fa-circle list_circle"></i>gather requirements from clients and users</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row work_ex">
+                    <div>
+                        <p class="work_name" style="color:#0BBBA0;">UI/UX Designer <span class="place"> Oxford University</span></p>
+                        <p class="year" style="color:#FB6565;">2001-2020</p>
+                        <h4 class="respon">Responsibility ==> </h4>
+                        <ul class="ul">
+                            <li class="list"><i class="fa fa-circle list_circle"></i>meet designers, developers and project staff for progress updates</li>
+                            <li class="list"><i class="fa fa-circle list_circle"></i>gather requirements from clients and users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pricing" id="pricing">
+        <div class="row price">
+            <div class="col-sm-12">
+                <h3 class="price_head">Pricing Table</h3>
+            </div>
+            <div class="col-sm-12 col-md col-lg price_table">
+                <div id="calendar">
+                    <span class="fa fa-calendar calendar" style="color:#0BBBA0"></span>
+                    <h1 id="head">Full-time Work</h1>
+                    <p id="text">I am avaliable at full time work</p>
+                    <h1 class="price_ammount">$1500</h1>
+                    <a href="mailto:cornerlay45@gmail.com?subject=To hire Full-time work&body=Hay,mother fucker" class="email btn btn-fill">Hire Me</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md col-lg price_table">
+                <div id="calendar">
+                    <span class="fa fa-hourglass calendar" style="color:#0BBBA0"></span>
+                    <h1 id="head">Hourly Work</h1>
+                    <p id="text">I am available for Hourley projets</p>
+                    <h1 class="price_ammount">$50</h1>
+                    <a href="mailto:cornerlay45@gmail.com?subject=To hire Hourly work&body=Hay,mother fucker" class="email btn btn-fill">Hire Me</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md col-lg price_table">
+                <div id="calendar">
+                    <span class="fa fa-file calendar" style="color:#0BBBA0"></span>
+                    <h1 id="head">Fixed Price Project</h1>
+                    <p id="text">I am available for fixed roles</p>
+                    <h1 class="price_ammount">$500</h1>
+                    <a href="mailto:cornerlay45@gmail.com?subject=To hire fixed price project&body=Hay,mother fucker" class="email btn btn-fill">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects" id="projects">
+        <div class="section_head col-sm-12">
+            <h1 class="project_head">Recent Project</h1>
+        </div>
+        <div class="project row">
+            <div class="col-sm-12 col-md-4 col-lg4">
+                <div class="hide_relative">
+                    <img src="{% static 'images/test1.jpg' %}" class="mother_fucker">
+                    <div class="hide">
+                        <i class="fas fa-search search"></i>
+                        <h3 class="hide_title">Raven Restaurant</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg4">
+                <div class="hide_relative">
+                    <img src="{% static 'images/test1.jpg' %}" class="mother_fucker">
+                    <div class="hide">
+                        <i class="fas fa-search search"></i>
+                        <h3 class="hide_title">Create WebDesign</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg4">
+                <div class="hide_relative">
+                    <img src="{% static 'images/test1.jpg' %}" class="mother_fucker">
+                    <div class="hide">
+                        <i class="fas fa-search search"></i>
+                        <h3 class="hide_title">Raven Restaurant</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project_info">
+            <div class="row detail">
+                <div class="col-sm-6 detail_text">
+                    <h3 class="project_title">Raven Restaurant</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore similique ut maxime enim, non obcaecati a fuga? Dolorum at fugit explicabo reprehenderit. Odit maxime magnam illum, veritatis aliquid quae nesciunt.
+
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias impedit, similique nisi ipsam obcaecati quas veniam tempore animi voluptates. Atque dolorum nobis non magni quisquam harum culpa! Consectetur, illo quia!
+
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, ex voluptas. Numquam voluptatibus optio iure suscipit odio a corporis? A ea beatae, assumenda laborum non at corrupti quasi nobis! Ad?
+                    </p>
+                    <ul style="padding-left:0;" class="justify-content-center">
+                        <li><span>Python</span></li>
+                        <li><span>Django</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>React</span></li>
+                        <li><span>Postgres</span></li>
+                        <li><span>JS Charts</span></li>
+                        <li><span>AWS (RDS/S3)</span></li>
+                    </ul>
+                    <a href="#" class="btn btn-demo">Live Demo</a>
+                </div>
+                <div class="col-sm-6">
+                    <img src="{% static 'images/test2.png' %}" alt="" class="detail_photo">
+                    <img src="{% static 'images/test3.png' %}" alt="" class="detail_photo">
+                    <img src="{% static 'images/AU-wp4.jpg' %}" alt="" class="detail_photo">
+                    <img src="{% static 'images/smoking.jpg' %}" alt="" class="detail_photo">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+      <h5 id="copy">Powered By Django <br>And<br><i class="fa fa-copyright copy"></i> 2020 Wai Lwin Phyo</h5>
+    </section>
+
+    <script>
+        // $(".intro_button").on({
+        //     hover: function(){
+        //         $(this).css({'background-color':'#40E0D0', 'color':'black'})
+        //     },
+        //     mouseleave: function(){
+        //         $(this).css({'background-color':'var(--green)', 'color':'#fff'})
+        //     }
+        // })
+
+        let fuck=document.querySelector(".project_info")
+        $(".mother_fucker, .hide").click(()=>{
+            $(".project_info").css("display","block");
+        });
+        $(".project_info").click(()=>{
+            $(".project_info").css("display","none");
+        })
+        $(window).click((event)=>{
+            if (event.target==fuck){
+                fuck.style.display="none";
+            }
+        });
+    </script>
+</body>
+</html>
